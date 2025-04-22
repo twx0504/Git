@@ -79,10 +79,10 @@
 
 > - Git always uses the information for the user on that system.
 > - There's a `.gitconfig` file in the user's home directory.
-```js
-/* Setting global identity */
-// git config --global user.name 'twx0504'
-// git config --global user.email weixintoo2000@gmail.com 
+```bash
+# Setting global identity
+git config --global user.name 'twx0504'
+git config --global user.email weixintoo2000@gmail.com 
 ```
 
 **Set local identity**
@@ -90,10 +90,10 @@
 > - Git will uses the local identity for the current project.
 > - it will write the identity to the .git/config file.
 
-```js
-/* Without --global option */
-// git config user.name "twx0504"
-// git config user.email "weixintoo2000@gmail.com"
+```bash
+# Without --global option
+git config user.name "twx0504"
+git config user.email "weixintoo2000@gmail.com"
 ```
 
 ### 4.2 Git Init
@@ -102,8 +102,9 @@
 > - tell git to start managing the current project.
 > - it creates a hidden .git subdirectory in the root of the project.
 > > - contains all the necessary metadata and version history for the repository.
-```js
-// git init # Initialize a local Git repository
+
+```bash
+git init # Initialize a local Git repository
 ```
 
 ## 05 Creating New Version
@@ -207,26 +208,26 @@
 > - system: `C:\Program Files\Git\etc`
 > > - requires permission (administratro)
 > > - e.g., mimicking collaboration of multiple developers.
-```js
-// Note: open git bash / power shell as administrator
-// git config --system user.name <username>
-// git config --system user.email <email>
+```bash
+# Note: open git bash / power shell as administrator
+# git config --system user.name <username>
+# git config --system user.email <email>
 
 ```
 
 > - global: `C:\Users\twx0504`
 > > - usually, global is what we need.
-```js
-// git config --global user.name <username>
-// git config --global user.email <email>
+```bash
+# git config --global user.name <username>
+# git config --global user.email <email>
 
 ```
 
 > - local: 
 > > - if a specific project requires different identity, you can use local identity to override the global one.
-```js
-// git config user.name <username>
-// git config user.email <email>
+```bash
+# git config user.name <username>
+# git config user.email <email>
 
 ```
 
